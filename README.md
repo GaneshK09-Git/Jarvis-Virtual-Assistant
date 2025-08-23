@@ -93,9 +93,13 @@ Example commands you can try:
 ## Project Structure
 
 jarvis-virtual-assistant/
+
 │── main.py           # Core assistant logic
+
 │── requirements.txt  # Python dependencies
+
 │── .env              # API keys (ignored in Git)
+
 │── .gitignore        # Ignored files (.env, __pycache__, .venv)
 
 ---
