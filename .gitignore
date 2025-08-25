@@ -1,0 +1,20 @@
+#ignores all the things below while deploying the project
+# This is a sample .gitignore file for a Python project
+
+# 🐍 Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 🔐 Environment variables
+.env
+
+# 💻 Virtual environment folders
+.venv/
+env/
+venv/
+
+# 🗃 IDE/editor-specific
+.vscode/
+.idea/
+
