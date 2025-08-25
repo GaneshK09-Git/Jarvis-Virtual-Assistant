@@ -41,6 +41,17 @@ playing songs, and answering questions using **Google Gemini AI**.
 
 ---
 
+## Requirements:
+
+- Python 3.8+
+  
+- A microphone 🎤
+  
+- Internet connection 🌐
+
+---
+
+
 ## ⚙️ Installation
 
 1. Clone the repository
@@ -59,10 +70,13 @@ playing songs, and answering questions using **Google Gemini AI**.
    pip install -r requirements.txt
 
 4. Set up environment variables
-Create a .env file in the project root and add your API keys:
-  env
-  GEMINI_API_KEY=your_gemini_api_key_here
-  NEWS_API_KEY=your_news_api_key_here
+
+    Create a .env file in the project root and add your API keys:
+    
+    GEMINI_API_KEY=your_gemini_api_key_here
+    
+    NEWS_API_KEY=your_news_api_key_here
+
 
 ---
 
