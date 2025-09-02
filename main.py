@@ -37,7 +37,7 @@ recognizer.non_speaking_duration = 0.8              # How much time (in seconds)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")        # Loads Gemini API key from .env
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")            # Loads News API key from .env
 genai.configure(api_key=GEMINI_API_KEY)             # Sets the Gemini API key for use
-model = genai.GenerativeModel("gemini-1.5-pro")     # Prepares the Gemini model  # model = genai.GenerativeModel(model_name="gemini-1.5-flash-latest")-other model
+model = genai.GenerativeModel("gemini-1.5-pro")     # Prepares the Gemini model  # model = genai.GenerativeModel(model_name="gemini-1.5-flash-latest")
 
 
 
@@ -167,7 +167,7 @@ if __name__ == "__main__":
                                 print(f"You said: {command}")
                                 success = processCommand(command)
                                 if success:
-                                    pass                                # continues to stay on command without getting back to the wake word
+                                    break                                # continues to stay on command without getting back to the wake word
                             except sr.UnknownValueError:
                                 speak("I didn't catch that. Could you please repeat?")
                             except Exception as e:
