@@ -167,7 +167,7 @@ if __name__ == "__main__":
                                 print(f"You said: {command}")
                                 success = processCommand(command)
                                 if success:
-                                    pass                                # continues to stay on command without getting back to the wake word
+                                    break                                # continues to stay on command without getting back to the wake word
                             except sr.UnknownValueError:
                                 speak("I didn't catch that. Could you please repeat?")
                             except Exception as e:
